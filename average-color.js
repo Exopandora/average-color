@@ -50,13 +50,13 @@ function getAverageColor(img) {
   var length = data.length;
 
   for (var i = 0, l = data.length; i < l; i += 4) {
-	if(data[i+3] > 0) {
-	  r += data[i];
-	  g += data[i+1];
-	  b += data[i+2];
-	} else {
-	  length -= 4;
-	}
+    if(data[i+3] > 0) {
+      r += data[i];
+      g += data[i+1];
+      b += data[i+2];
+    } else {
+      length -= 4;
+    }
   }
 
   r = Math.floor(r / (length / 4));
